@@ -14,13 +14,10 @@ namespace pooCalculoMaiorIdade
             for (int i = 0; i < 3; i++)
             {
                 pessoas[i] = new Pessoa();
-                Console.WriteLine("Digite seu nome: ");
+                Console.WriteLine("Digite o nome da " + (i+1) + " pessoa: ");
                 pessoas[i].Nome = Console.ReadLine();
-                Console.WriteLine("Digite sua idade: ");
+                Console.WriteLine("Digite a idade da " + (i+1) + " pessoa: ");
                 pessoas[i].Idade = int.Parse(Console.ReadLine());
-
-
-
             }
 
             int IndiceMaior = 0;
@@ -31,7 +28,6 @@ namespace pooCalculoMaiorIdade
                 {
                     IndiceMaior = i;
                 }
-
             }
 
             
